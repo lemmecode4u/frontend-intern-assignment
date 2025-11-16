@@ -1,1 +1,0 @@
-# frontend-intern-assignment
