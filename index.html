@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Product Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Product Dashboard</h1>
+  </header>
+
+  <section class="filters">
+    <input type="text" id="search-bar" placeholder="Search by name..." />
+
+    <!-- FIX: type="button" added -->
+    <button id="search-btn" type="button">Search</button>
+
+    <select id="category-filter">
+      <option value="">All Categories</option>
+      <option value="electronics">Electronics</option>
+      <option value="jewelery">Jewelry</option>
+      <option value="men's clothing">Men's Clothing</option>
+      <option value="women's clothing">Women's Clothing</option>
+    </select>
+
+    <select id="sort-by">
+      <option value="low-to-high">Price: Low to High</option>
+      <option value="high-to-low">Price: High to Low</option>
+    </select>
+  </section>
+
+  <section id="product-grid" class="product-grid"></section>
+
+  <!-- MODAL -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 id="modal-title"></h2>
+      <img id="modal-image" src="" />
+      <p id="modal-description"></p>
+      <p><strong>Price:</strong> $<span id="modal-price"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
